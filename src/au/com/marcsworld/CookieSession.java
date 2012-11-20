@@ -7,6 +7,7 @@ public class CookieSession implements Serializable{
 	private static final long serialVersionUID = -779823856918700575L;
 
 	private long lastAccessedTime;
+	private Map<String, Object> attributes;
 	
 	public long getLastAccessedTime() {
 		return lastAccessedTime;
@@ -20,5 +21,4 @@ public class CookieSession implements Serializable{
 	public void setAttributes(Map<String, Object> attributes) {
 		this.attributes = attributes;
 	}
-	private Map<String, Object> attributes;
 }
