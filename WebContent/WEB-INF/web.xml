@@ -11,6 +11,7 @@
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>
     <url-pattern>*.do</url-pattern>
+    <url-pattern>/index.do</url-pattern>        
   </servlet-mapping>
   <filter>
     <display-name>CookieSessionFilter</display-name>
@@ -42,7 +43,7 @@
     <location>/views/accessDenied.jsp</location>
  </error-page>  
  <welcome-file-list>
- 	<welcome-file>/index.do</welcome-file>
+ 	<welcome-file>index.do</welcome-file>
  </welcome-file-list>
  <session-config>
       <session-timeout>1</session-timeout> 

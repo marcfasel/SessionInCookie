@@ -9,6 +9,13 @@ import javax.servlet.http.HttpServletResponseWrapper;
 
 import org.apache.log4j.Logger;
 
+/**
+ * The FilterResponseWrapper wraps a servlet response to allow explicit control over when a 
+ * response is committed. Only calling flushBuffer() on this class will commit the response.
+ * 
+ * @author marcfasel
+ *
+ */
 public class FilterResponseWrapper extends HttpServletResponseWrapper {
 	Logger LOGGER = Logger.getLogger(FilterResponseWrapper.class);
 

@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import au.com.marcsworld.model.IndexModel;
 
+/**
+ * First controller to be hit.
+ * 
+ * @author marcfasel
+ *
+ */
 @Controller
 public class IndexController {
 	Logger LOGGER = Logger.getLogger(IndexController.class);

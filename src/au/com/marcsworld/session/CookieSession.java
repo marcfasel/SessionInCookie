@@ -1,20 +1,19 @@
-package au.com.marcsworld;
+package au.com.marcsworld.session;
 
 import java.io.Serializable;
 import java.util.Map;
 
+/**
+ * Container class to store HTTP session attribute map.
+ * 
+ * @author marcfasel
+ *
+ */
 public class CookieSession implements Serializable{
 	private static final long serialVersionUID = -779823856918700575L;
 
-	private long lastAccessedTime;
 	private Map<String, Object> attributes;
 	
-	public long getLastAccessedTime() {
-		return lastAccessedTime;
-	}
-	public void setLastAccessedTime(long lastAccessedTime) {
-		this.lastAccessedTime = lastAccessedTime;
-	}
 	public Map<String, Object> getAttributes() {
 		return attributes;
 	}

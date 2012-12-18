@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import au.com.marcsworld.model.IndexModel;
 
+/**
+ * The LogOutController invalidates the session.
+ * 
+ * @author marcfasel
+ *
+ */
 @Controller
 public class LogOutController {
 	Logger LOGGER = Logger.getLogger(LogOutController.class);

@@ -1,5 +1,11 @@
 package au.com.marcsworld.model;
 
+/**
+ * Model for the Index Controller.
+ * 
+ * @author marcfasel
+ *
+ */
 public class IndexModel {
 
 	String userName;

@@ -1,25 +1,27 @@
-package au.com.marcsworld;
+package au.com.marcsworld.domain;
 
 import java.io.Serializable;
 
+/**
+ * Sample user class to be stored in the session. This is used as an example
+ * of data serialised and deserialised by the @CookieSessionFilter and the 
+ * @AdvancedCookieSessionFilter.
+ *  
+ * @author marcfasel
+ *
+ */
 public class User implements Serializable{
 	private static final long serialVersionUID = 2828589506913268163L;
 
 	String userName;
 	String password;
-	String streetNumber;
+	String companyName;
 	String street;
 	String city;
 	String state;
 	String code;
 	String country;
 	
-	public String getStreetNumber() {
-		return streetNumber;
-	}
-	public void setStreetNumber(String streetNumber) {
-		this.streetNumber = streetNumber;
-	}
 	public String getStreet() {
 		return street;
 	}
@@ -61,5 +63,11 @@ public class User implements Serializable{
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 }

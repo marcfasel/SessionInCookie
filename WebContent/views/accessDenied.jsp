@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>Access Denied.</p>
+<p>Access Denied. You don't seem to be logged in.</p>
 </body>
 </html>

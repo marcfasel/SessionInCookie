@@ -7,9 +7,41 @@
 <title>Secure Part</title>
 </head>
 <body>
-<p>This is the secure part of the application.</p>
-<form action="../logOut.do" method="POST">
-	<input type="submit" name="LogOut" value="log out"/>
-</form>
+<p>${user.userName}, this is still the secure part of the application.</p>
+<p> We now have a user object with a few attributes in the session.</p>
+	<table>
+		<tr>
+			<td>First Name:</td>
+			<td>${user.userName}</td>
+		</tr>
+		<tr>
+			<td>Company:</td>
+			<td>${user.companyName}</td>
+		</tr>
+		<tr>
+			<td>Street:</td>
+			<td>${user.street}</td>
+		</tr>
+		<tr>
+			<td>Suburb:</td>
+			<td>${user.city}</td>
+		</tr>
+		<tr>
+			<td>State:</td>
+			<td>${user.state}</td>
+		</tr>
+		<tr>
+			<td>Postcode:</td>
+			<td>${user.code}</td>
+		</tr>
+		<tr>
+			<td>Country:</td>
+			<td>${user.country}</td>
+		</tr>
+	</table>
+
+	<form action="../logOut.do" method="POST">
+		<input type="submit" name="LogOut" value="log out"/>
+	</form>
 </body>
 </html>

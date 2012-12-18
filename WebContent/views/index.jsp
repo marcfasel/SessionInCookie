@@ -23,6 +23,7 @@
 		</tr>
 	</table>
 	<p style="color:red;">${indexModel.error}</p>
+	<p> Use UserName="Marc" and Password="password" to log in.</p>
 	<input type="submit" name="LogInButton" value="Log In"/>
 </form:form>
 </p>

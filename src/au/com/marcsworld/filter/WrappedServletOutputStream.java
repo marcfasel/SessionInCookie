@@ -7,6 +7,13 @@ import javax.servlet.ServletOutputStream;
 
 import org.apache.log4j.Logger;
 
+/**
+ * The WarppedServletOutputStream acts as a wrapper around an output stream to control
+ * flushing of the stream.
+ * 
+ * @author marcfasel
+ *
+ */
 public class WrappedServletOutputStream extends ServletOutputStream {
 	Logger LOGGER = Logger.getLogger(WrappedServletOutputStream.class);
 

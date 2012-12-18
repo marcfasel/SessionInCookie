@@ -14,6 +14,16 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 
+/**
+ * The securityFilter checks whether a user is logged in. A user is
+ * logged in when a @User object is available in the session. If no
+ * user is available an HTTP error 401 unauthorised is sent.
+ *  
+ *  The SecurityFilter is configured only to listen to /secure/ urls. 
+ *
+ * @author marcfasel
+ *
+ */
 public class SecurityFilter implements Filter {
 	Logger LOGGER = Logger.getLogger(SecurityFilter.class);
 
